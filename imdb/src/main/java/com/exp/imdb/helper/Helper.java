@@ -21,6 +21,7 @@ public class Helper {
 	public static BaseResponse getExceptionEmbededGenericResponse(ExceptionEnum exception) {
 		
 		BaseResponse baseResponse = new BaseResponse(exception.getCode(), exception.getMessage());
+		logger.error(exception.getMessage());
 		return baseResponse;
 	}
 	

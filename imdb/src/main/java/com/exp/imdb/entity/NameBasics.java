@@ -2,14 +2,12 @@ package com.exp.imdb.entity;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 
@@ -17,6 +15,11 @@ import javax.persistence.Table;
 @Table(name = "NAME_BASICS")
 public class NameBasics implements Serializable{
 	
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@Column(name="nconst", unique = true, nullable=false)
@@ -32,7 +35,8 @@ public class NameBasics implements Serializable{
 	private List<String> primaryProfession;
 	
 	@Column(name="knownForTitles")
-	@ElementCollection(targetClass=TitleBasics.class)
+	//@ElementCollection(targetClass=TitleBasics.class)
+	@ManyToMany
 	private List<TitleBasics> knownForTitles;
 
 	

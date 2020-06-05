@@ -13,6 +13,11 @@ import javax.persistence.Table;
 @Table(name = "TITLE_PRINCIPAL")
 public class TitlePrincipal implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id", unique = true, nullable=false)
@@ -31,6 +36,8 @@ public class TitlePrincipal implements Serializable{
 	private String job;
 	@Column(name="characters", length=255, nullable=true)
 	private String characters;
+	
+	
 	public String getTconst() {
 		return tconst;
 	}

@@ -1,8 +1,5 @@
 package com.exp.imdb.converter;
 
-import javax.persistence.EntityManager;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.exp.imdb.entity.TitleBasics;
@@ -11,8 +8,8 @@ import com.exp.imdb.response.FilmDetail;
 @Component
 public class FilmDetailConverter implements ModelConverter<FilmDetail,TitleBasics> {
 
-	    @Autowired
-	    private EntityManager entityManager;
+//	    @Autowired
+//	    private EntityManager entityManager;
 
 	    @Override
 	    public FilmDetail toEntity(TitleBasics model) {

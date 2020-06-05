@@ -23,12 +23,12 @@ public class SchemaGenerator {
     public static void main(String[] args) throws Exception {
     	
 
-//        String directory = Paths.get("sql/").toAbsolutePath().toString();
-//
-//        String packageName[] = { "com.exp.imdb.entity" };
-//
-//        SchemaGenerator gen = new SchemaGenerator(packageName);
-//        gen.generate(Dialect.H2, directory,packageName);
+        String directory = Paths.get("sql/").toAbsolutePath().toString();
+
+        String packageName[] = { "com.exp.imdb.entity" };
+
+        SchemaGenerator gen = new SchemaGenerator(packageName);
+        gen.generate(Dialect.H2, directory,packageName);
 
 
     }
