@@ -4,7 +4,6 @@ import java.io.File;
 import java.net.URL;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.List;
 import java.util.logging.Logger;
@@ -14,23 +13,10 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 import org.hibernate.tool.schema.TargetType;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.exp.imdb.entity.NameBasics;
-import com.exp.imdb.entity.TitleBasics;
-import com.exp.imdb.entity.TitlePrincipal;
-import com.exp.imdb.enumeration.TitleTypeEnum;
-import com.exp.imdb.repository.NameBasicsRepository;
-import com.exp.imdb.repository.TitleBasicsRepository;
-import com.exp.imdb.repository.TitlePrincipalRepository;
 
 
 public class SchemaGenerator {
 
-	@Autowired
-	TitleBasicsRepository titleBasicsRepository;
-
-	
 
     private Configuration cfg;
 
