@@ -82,7 +82,7 @@ public class Tester {
 	    	NameBasics nameBasics = new NameBasics();
 	    	nameBasics.setBirthYear(Short.valueOf("1983"));
 	    	nameBasics.setDeathYear(null);
-	    	nameBasics.setKnownForTitles(Arrays.asList("Actor","Writer"));
+//	    	nameBasics.setKnownForTitles(Arrays.asList("Actor","Writer"));
 	    	nameBasics.setNconst("AHMETXYZ");
 	    	nameBasics.setPrimaryName("AHMET");
 	    	nameBasics.setPrimaryProfession(Arrays.asList("PULPFICTION"));
@@ -90,7 +90,7 @@ public class Tester {
 	    	NameBasics nameBasics1 = new NameBasics();
 	    	nameBasics.setBirthYear(Short.valueOf("1983"));
 	    	nameBasics.setDeathYear(null);
-	    	nameBasics.setKnownForTitles(Arrays.asList("Actor","Writer"));
+//	    	nameBasics.setKnownForTitles(Arrays.asList("Actor","Writer"));
 	    	nameBasics.setNconst("MEHMETTGB");
 	    	nameBasics.setPrimaryName("MEHMET");
 	    	nameBasics.setPrimaryProfession(Arrays.asList("THESHAWSHANKREDEMPTION","PULPFICTION"));
@@ -98,7 +98,7 @@ public class Tester {
 	    	NameBasics nameBasics2 = new NameBasics();
 	    	nameBasics.setBirthYear(Short.valueOf("1983"));
 	    	nameBasics.setDeathYear(null);
-	    	nameBasics.setKnownForTitles(Arrays.asList("Actor","Writer"));
+//	    	nameBasics.setKnownForTitles(Arrays.asList("Actor","Writer"));
 	    	nameBasics.setNconst("MAHMUTTTT");
 	    	nameBasics.setPrimaryName("MAHMUT");
 	    	nameBasics.setPrimaryProfession(Arrays.asList("FIGHTCLUB"));
@@ -106,7 +106,7 @@ public class Tester {
 	    	NameBasics nameBasics3 = new NameBasics();
 	    	nameBasics.setBirthYear(Short.valueOf("1983"));
 	    	nameBasics.setDeathYear(null);
-	    	nameBasics.setKnownForTitles(Arrays.asList("Actor","Writer"));
+//	    	nameBasics.setKnownForTitles(Arrays.asList("Actor","Writer"));
 	    	nameBasics.setNconst("OSMANHHG");
 	    	nameBasics.setPrimaryName("OSMAN");
 	    	nameBasics.setPrimaryProfession(Arrays.asList("SCHINDLERINLIST","FIGHTCLUB","PULPFICTION"));
