@@ -17,7 +17,7 @@ public interface TitlePrincipalRepository extends JpaRepository<TitlePrincipal, 
 //	@Query(value = "select t.tcount,count(*) tpcount from TITLE_PRINCIPAL t where t.tconst IN =?1 GROUP BY t.tcount HAVING COUNT(tpcount) > =?2 ",nativeQuery=true)
 //	List<Object[]> findByNconstForList(List<String> nconstList, int size);
 
-	@Query(value = "select t.tconst,count(*) tpcount from TITLE_PRINCIPAL t where t.tconst IN :nconstList GROUP BY t.tconst HAVING COUNT(tpcount) > 1 ",nativeQuery=true)
+	@Query(value = "select t.tconst,count(*) tpcount from TITLE_PRINCIPAL t where t.nconst IN :nconstList GROUP BY t.tconst HAVING COUNT(tpcount) > 1 ",nativeQuery=true)
 	List<Object[]> findByNconstForList(@Param("nconstList") List<String> nconstList);
 
 }
